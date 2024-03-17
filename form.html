@@ -1,0 +1,67 @@
+<html>
+<head>
+	<title>
+		A Sample Tutorial for database connection.
+	</title>
+</head>
+<body bgcolor="#507f89">
+	<div align="center">
+		<h1 style="color: white;">Enter Your Details</h1>
+	</div>
+<form action="dbms.php" method="post">
+	<table border="1" align="center" bgcolor="#fdfcfb" width="50%" height="300px">
+		<tr>
+			<td>
+			<label for="plantName">Plant Name:</label></td>
+			<td><input type="text"  id="plantName" name="plantName" readonly></td>
+		</tr>
+		<tr>
+			<td>
+			<label for="cost">Cost:</label></td>
+            <td><input type="text" id="cost" name="cost" readonly>
+            </td>
+        </tr>
+		<tr>
+			<td>
+			<label>fullName</label></td>
+			<td><input type="text" name="fullName"></td>
+		</tr>
+		<tr>
+			<td>
+			<label>contactNumber</label></td>
+			<td><input type="text" name="contactNumber"></td>
+		</tr>
+		
+		<tr>
+			<td>
+			<label>Email</label></td>
+			<td><input type="email" name="email"></td>
+		</tr>
+		<tr>
+			<td>
+			<label>Address</label></td>
+			<td><input type="text" name="address"></td>
+		</tr>
+		<tr>
+			<td>
+			<label>paymentMethod</label></td>
+			<td><input type="radio" name="paymentMethod" value="cash">cash
+			<input type="radio" name="paymentMethod" value="onlion">online</td>
+		</tr>
+		<tr>
+			<td colspan="2" align="center" ><input type="submit" name="save" value="Submit" style="font-size:20px"></td>
+		</tr>
+	</table>
+</form>
+<script>
+        // Retrieve plantName and cost from URL parameters
+        const urlParams = new URLSearchParams(window.location.search);
+        const plantName = urlParams.get('plantName');
+        const cost = urlParams.get('cost');
+
+        // Populate the form fields with the retrieved values
+        document.getElementById('plantName').value = plantName;
+        document.getElementById('cost').value = cost;
+</script>
+</body>
+</html>

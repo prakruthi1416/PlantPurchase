@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Decorative Plant Types</title>
+    <link rel="stylesheet" href="plant.css">
+    <style>
+        /* Add your custom styling here */
+        .plant-container {
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin: 10px;
+            text-align: center;
+            display: inline-block;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+        button {
+            background-color: #2AAA8A;
+            color: white;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Decorative Plant Types</h1>
+</header>
+
+<section>
+    <h2>Popular Decorative Plant Types</h2>
+
+    <div class="plant-container" onclick="redirectToForm('Fern', 150)">
+        <img src="fern.jpg" alt="Fern Image">
+        <h3>Fern</h3>
+        <p>Cost: 150 Rs.</p>
+        <button onclick="redirectToForm('Fern', 150)">Buy Now</button>
+    </div>
+
+    <div class="plant-container" onclick="redirectToForm('Bamboo', 180)">
+        <img src="bamboo.jpg" alt="Bamboo Image">
+        <h3>Bamboo</h3>
+        <p>Cost: 180 Rs.</p>
+        <button onclick="redirectToForm('Bamboo', 180)">Buy Now</button>
+    </div>
+
+    <div class="plant-container" onclick="redirectToForm('Snake Plant', 200)">
+        <img src="snake_plant.jpg" alt="Snake Plant Image">
+        <h3>Snake Plant</h3>
+        <p>Cost: 200 Rs.</p>
+        <button onclick="redirectToForm('Snake Plant', 200)">Buy Now</button>
+    </div>
+
+    <!-- Add more decorative plant types as needed -->
+</section>
+
+<script>
+    function redirectToForm(plantName, cost) {
+        // Redirect to the form page with the selected plant details
+        window.location.href = `form.html?plantName=${encodeURIComponent(plantName)}&cost=${cost}`;
+    }
+</script>
+
+</body>
+</html>

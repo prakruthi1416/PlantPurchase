@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Flower Plant Types</title>
+    <link rel="stylesheet" href="plant.css">
+    <style>
+        .plant-container {
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin: 10px;
+            width: 300px;
+            display: inline-block;
+            text-align: center;
+        }
+
+        .plant-image {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .buy-now-btn {
+            background-color: #2AAA8A;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Flower Plant Types</h1>
+</header>
+
+<section>
+    <h2>Popular Flower Plant Types</h2>
+
+    <div class="plant-container" data-name="Rose" data-cost="100">
+        <img src="rose.jpg" alt="Rose" class="plant-image">
+        <h3>Rose</h3>
+        <p>100 Rs.</p>
+        <a href="form.html?plantName=Rose&cost=100" class="buy-now-btn">Buy Now</a>
+    </div>
+
+    <div class="plant-container" data-name="Tulip" data-cost="120">
+        <img src="tulip.jpg" alt="Tulip" class="plant-image">
+        <h3>Tulip</h3>
+        <p>120 Rs.</p>
+        <a href="form.html?plantName=Tulip&cost=120" class="buy-now-btn">Buy Now</a>
+    </div>
+
+    <div class="plant-container" data-name="Sunflower" data-cost="150">
+        <img src="sunflower.jpg" alt="Sunflower" class="plant-image">
+        <h3>Sunflower</h3>
+        <p>150 Rs.</p>
+        <a href="form.html?plantName=Sunflower&cost=150" class="buy-now-btn">Buy Now</a>
+    </div>
+
+    <!-- Add more flower plant types as needed -->
+</section>
+
+</body>
+</html>

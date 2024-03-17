@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Plant Purchase</title>
+    <link rel="stylesheet" href="plant.css">
+</head>
+<body>
+
+    <header>
+        <h1>Purchase Your Own Plant</h1>
+    </header>
+
+    <section>
+        
+        <div class="quote" style="text-align: center;">
+            <img src="firstimg.jpg" alt="Garden Image" style="width: 15%;">
+        </div>
+
+        <div class="plant-categories">
+            <div class="plant-category" onclick="navigateTo('flower')">
+                <img src="flower.jpg" alt="Flower Plants" style="width: 30%;">
+                <h2>Flower Plants</h2>
+                <p style="font-size: small;">Explore a variety of beautiful flower plants for your garden.</p>
+            </div>
+
+            <div class="plant-category" onclick="navigateTo('fruit')">
+                <img src="fruit.jpg" alt="Fruit Plants" style="width: 55%;">
+                <h2>Fruit Plants</h2>
+                <p style="font-size: small;">Grow your own fresh fruits with our collection of fruit plants.</p>
+            </div>
+
+            <div class="plant-category" onclick="navigateTo('decorative')">
+                <img src="decorative.jpg" alt="Decorative Plants" style="width: 55%;">
+                <h2>Decorative Plants</h2>
+                <p style="font-size: small;">Add a touch of elegance to your home with our decorative plants.</p>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        function navigateTo(category) {
+            // Redirect to the appropriate page based on the selected category
+            switch (category) {
+                case 'flower':
+                    window.location.href = 'plantypes.html?type=flower';
+                    break;
+                case 'fruit':
+                    window.location.href = 'fruitypes.html?type=fruit';
+                    break;
+                case 'decorative':
+                    window.location.href = 'decorative.html?type=decorative';
+                    break;
+                default:
+                    break;
+            }
+        }
+    </script>
+
+</body>
+</html>

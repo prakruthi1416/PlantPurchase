@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Fruit Plant Types</title>
+    <link rel="stylesheet" href="plant.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        header {
+            background-color: #2AAA8A;
+            color: white;
+            text-align: center;
+            padding: 1em;
+        }
+
+        section {
+            margin: 20px;
+        }
+
+        .plant-container {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        .plant-box {
+            width: 200px;
+            border: 1px solid #ddd;
+            margin: 10px;
+            padding: 10px;
+            text-align: center;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 10px;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 8px 12px;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+    <!-- Add this script section in your head -->
+    <script>
+        function redirectToForm(plantName, cost) {
+            // Redirect to the form page with the selected plant details
+            window.location.href = `form.html?plantName=${encodeURIComponent(plantName)}&cost=${cost}`;
+        }
+    </script>
+</head>
+<body>
+
+<header>
+    <h1>Fruit Plant Types</h1>
+</header>
+
+<section>
+    <h2>Popular Fruit Plant Types</h2>
+
+    <div class="plant-container">
+        <div class="plant-box">
+            <img src="mango.jpg" alt="Apple Tree">
+            <h3>Mango Plant</h3>
+            <p>Cost: 100 Rs.</p>
+            <!-- Inside each plant-box -->
+            <button onclick="redirectToForm('Mango Plant', 100)">Buy Now</button>
+        </div>
+
+        <div class="plant-box">
+            <img src="orange.jpg" alt="Orange Tree">
+            <h3>Orange Plant</h3>
+            <p>Cost: 120 Rs.</p>
+            <!-- Inside each plant-box -->
+            <button onclick="redirectToForm('Orange Plant', 120)">Buy Now</button>
+        </div>
+
+        <div class="plant-box">
+            <img src="banana.jpg" alt="Banana Plant">
+            <h3>Banana Plant</h3>
+            <p>Cost: 90 Rs.</p>
+            <!-- Inside each plant-box -->
+            <button onclick="redirectToForm('Banana Plant', 90)">Buy Now</button>
+        </div>
+        <!-- Add more plant boxes as needed -->
+    </div>
+</section>
+
+</body>
+</html>

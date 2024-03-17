@@ -1,0 +1,50 @@
+<html>
+<head>
+	<title>
+		A Sample Tutorial for database connection.
+	</title>
+</head>
+<body bgcolor="#507f89">
+	<div align="center">
+		<h1 style="color: white;">Enter Your Details</h1>
+	</div>
+<form action="dbms1.php" method="post">
+	<table border="1" align="center" bgcolor="#fdfcfb" width="50%" height="300px">
+		<tr>
+			<td>
+			<label for="purchaseid">Purchase ID</label></td>
+			<td><input type="text"  id="purchaseid" name="purchaseid" ></td>
+		</tr>
+		<tr>
+			<td>
+			<label for="companyName">Company Name</label></td>
+            <td><input type="text" id="companyName" name="companyName" >
+            </td>
+        </tr>
+		
+		<tr>
+			<td>
+			<label>contactNumber</label></td>
+			<td><input type="text" name="contactNumber"></td>
+		</tr>
+		
+	
+		<tr>
+			<td>
+			<label>Address</label></td>
+			<td><input type="text" name="address"></td>
+		</tr>
+		<tr>
+			<td>
+			<label>purchaseType</label></td>
+			<td><input type="radio" name="purchaseType" value="flower">Flower
+			<input type="radio" name="purchaseType" value="fruit">Fruit
+			<input type="radio" name="purchaseType" value="decorative">Decorative</td>
+		</tr>
+		<tr>
+			<td colspan="2" align="center" ><input type="submit" name="save" value="Submit" style="font-size:20px"></td>
+		</tr>
+	</table>
+</form>
+</body>
+</html>
